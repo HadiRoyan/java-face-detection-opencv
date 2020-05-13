@@ -32,12 +32,12 @@ public class App {
         	System.out.println("OpenCV library loaded!");
 
         	// Reading the image from the file & storing it in to a matrix object
-        	String imgFile = "C:/a-Hadroy-Project/FaceDetection/src/main/resources/image/facedetection_input.jpg"; 
+        	String imgFile = "src/main/resources/image/facedetection_input.jpg"; 
         	Mat src = Imgcodecs.imread(imgFile);
         	System.out.println("Image loaded!");
 
         	// inisiating cascade classifier
-        	String xmlFile = "C:/a-Hadroy-Project/FaceDetection/src/main/resources/lbpCascade/lbpcascade_frontalface.xml";
+        	String xmlFile = "src/main/resources/lbpCascade/lbpcascade_frontalface.xml";
         	CascadeClassifier classifier = new CascadeClassifier(xmlFile);
         	System.out.println("CascadeClassifier loaded!");
 
@@ -56,7 +56,7 @@ public class App {
         		);
         	}
 
-        	String outFile = "C:/a-Hadroy-Project/FaceDetection/src/main/resources/image/output.jpg"; 
+        	String outFile = "src/main/resources/image/output.jpg"; 
         	// writing the image
         	Imgcodecs.imwrite(outFile,src);
 
