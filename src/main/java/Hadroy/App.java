@@ -27,8 +27,8 @@ public class App {
         try{
 
         	// Loading OpenCV library
-        	// System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        	System.load("C:/OpenCV/opencv/build/java/x86/opencv_java430.dll");
+//        	 System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+        	System.load("C:/OpenCV/opencv/build/java/x64/opencv_java460.dll");
         	System.out.println("OpenCV library loaded!");
 
         	// Reading the image from the file & storing it in to a matrix object
@@ -67,7 +67,7 @@ public class App {
             System.out.println("Error : "+ e);
         }
 
-
+		System.exit(0);
     }
 }
 
